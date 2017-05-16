@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2.0dip"
+    android:background="@drawable/back_row"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="date"
+        android:textColor="@android:color/black"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/amtPaid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="amt Paid"
+        android:textColor="@android:color/black"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/amtRemains"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:text="amt remains"
+        android:textColor="@android:color/black"
+        android:textSize="16.0dip" />
+
+</LinearLayout>

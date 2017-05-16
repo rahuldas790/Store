@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:alpha="0.6"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="NEW CHIT"
+                android:textColor="@android:color/white"
+                android:textSize="35.0dip" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/total_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:hint="Chit Amount"
+                android:inputType="numberDecimal"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/amount" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/starting_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:hint="Date"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/date"
+                android:inputType="date"
+                android:focusable="false"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/member_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:hint="Member Capacity"
+                android:inputType="numberDecimal"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/membership" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/no_of_months"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:hint="No of months"
+                android:inputType="numberDecimal"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/months"
+                android:editable="false"/>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="35.0dip"
+                android:background="@drawable/buttons"
+                android:gravity="center"
+                android:padding="5.0dip"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white"
+                android:textSize="25.0dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

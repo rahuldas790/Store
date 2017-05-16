@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_bank_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rahulkumardas.chitfund.ui.bank.CreateBankAccount">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/accountNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="A/C Number"
+        android:inputType="number"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@mipmap/amount" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountNo"
+        android:hint="Name"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@mipmap/amount" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/ifscCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="IFSC Code"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@mipmap/amount" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/bankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ifscCode"
+        android:hint="Bank Name"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@mipmap/amount" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bankName"
+        android:hint="Branch"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@mipmap/amount" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/branch"
+        android:hint="Address"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@mipmap/amount" />
+
+    <Button
+        android:id="@+id/createNow"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/buttons"
+        android:text="Create"
+        android:textSize="17dp" />
+</RelativeLayout>

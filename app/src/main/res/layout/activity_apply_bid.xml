@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="15.0dip"
+        android:alpha="0.6"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:text="APPLYING BID"
+        android:textColor="@android:color/white"
+        android:textSize="20.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10.0dip"
+            android:text="Month : "
+            android:textSize="20.0dip" />
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:paddingRight="10.0dip"
+            android:text="July"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+
+
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+        android:id="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:hint="Name "
+        android:padding="2.0dip"
+        android:textSize="18.0dip"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@mipmap/name" />
+
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+        android:id="@+id/bidAmount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:hint="Bid Amount"
+        android:inputType="number"
+        android:padding="2.0dip"
+        android:textSize="18.0dip"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@mipmap/amount" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40.0dip"
+        android:layout_marginLeft="80.0dip"
+        android:layout_marginRight="80.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/buttons"
+        android:gravity="center"
+        android:onClick="applyBid"
+        android:text="APPLY"
+        android:textColor="@android:color/white"
+        android:textSize="25.0dip" />
+</LinearLayout>

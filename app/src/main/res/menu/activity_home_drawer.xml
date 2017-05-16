@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/chit"
+            android:icon="@mipmap/amount"
+            android:title="Normal Chit" />
+        <item
+            android:id="@+id/gold_chit"
+            android:icon="@mipmap/amount"
+            android:title="Gold Chit" />
+        <item
+            android:id="@+id/rent"
+            android:icon="@mipmap/address"
+            android:title="Rent" />
+        <item
+            android:id="@+id/bank"
+            android:icon="@mipmap/shop"
+            android:title="Bank" />
+
+        <item
+            android:id="@+id/member"
+            android:icon="@mipmap/membership"
+            android:title="Add Member" />
+        <item
+            android:id="@+id/sheet"
+            android:icon="@mipmap/months"
+            android:title="Balance Sheet" />
+    </group>
+
+</menu>

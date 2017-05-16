@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rent_specification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rahulkumardas.chitfund.ui.rent.AddNewRentActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back_row"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Enter Following Details"
+            android:textSize="20dp" />
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="Rent Type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:met_floatingLabel="highlight" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/flatNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Flat No"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/roomNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Room No"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:met_floatingLabel="highlight" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccentSemi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tenant name"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/name" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Amount"
+                android:inputType="numberDecimal"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/amount" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/advPaid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Advanced paid"
+                android:inputType="numberDecimal"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/amount" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/advDate"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Advanced paid date"
+                android:inputType="date"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/date" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Interest Rate %"
+                android:inputType="numberDecimal"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/amount" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Time slot"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Year"
+                        android:textSize="18dp" />
+
+                    <Spinner
+                        android:id="@+id/year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Month"
+                        android:textSize="18dp" />
+
+                    <Spinner
+                        android:id="@+id/month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/buttons"
+                android:text="Done"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

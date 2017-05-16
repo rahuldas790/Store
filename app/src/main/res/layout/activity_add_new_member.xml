@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginTop="15.0dip"
+                android:alpha="0.6"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="5.0dip"
+                android:text="ADDING A MEMBER"
+                android:textColor="@android:color/white"
+                android:textSize="28.0dip" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of the member"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/name" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone no."
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                android:inputType="phone"
+                app:met_iconLeft="@mipmap/phone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/email" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shop name"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/shop" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Village"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/village" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/related"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Related through"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@drawable/ic_related" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textSize="20.0dip"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/address" />
+
+            <Button
+                android:id="@+id/submit"
+                android:onClick="submit"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80.0dip"
+                android:layout_marginRight="80.0dip"
+                android:layout_marginTop="35.0dip"
+                android:background="@drawable/buttons"
+                android:gravity="center"
+                android:text="SUBMIT"
+                android:textColor="@android:color/white"
+                android:textSize="25.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

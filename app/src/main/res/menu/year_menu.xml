@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="2016"
+        android:id="@+id/one" />
+    <item android:title="2017"
+        android:id="@+id/two" />
+    <item android:title="Other"
+        android:id="@+id/three" />
+</menu>

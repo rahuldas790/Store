@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rahulkumardas.chitfund">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".ui.ChitFundApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.chit.AddNewChitActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.chit.AddNewMember"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.chit.ReceiveAmountActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.chit.ChitListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.chit.ChitDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.chit.SearchMemberActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.chit.AddMemberNameActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.chit.ApplyBidActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.chit.MemberDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.ChitDetailsActivityGold"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.AddMemberNameActivityGold"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.AddNewChitActivityGold"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.AddNewMemberGold"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.ApplyBidActivityGold"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.SearchMemberActivityGold"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.ChitListActivityGold"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.MemberDetailsActivityGold"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gold.ReceiveAmountActivityGold"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.rent.AddNewRentActivity" />
+        <activity
+            android:name=".ui.rent.ReceiveAmountRent"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.bank.CreateBankAccount" />
+        <activity android:name=".ui.bank.WithdrawActivity" />
+        <activity android:name=".ui.bank.DepositeActivity" />
+        <activity android:name=".ui.bank.FundTransferActivity" />
+        <activity android:name=".ui.bank.ViewBankActivity" />
+        <activity android:name=".ui.bank.StatementActivity" />
+        <activity android:name=".ui.rent.ViewRentDetails" />
+        <activity
+            android:name=".ui.rent.RentActivityTwo"
+            android:label="@string/title_activity_rent_two"
+            android:parentActivityName=".ui.HomeActivity"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="rahulkumardas.chitfund.ui.HomeActivity" />
+        </activity>
+        <activity android:name=".ui.BalanceSheetActivity"></activity>
+    </application>
+
+</manifest>
